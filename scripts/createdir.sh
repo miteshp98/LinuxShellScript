@@ -4,7 +4,7 @@
 
 #Define Name in here.
 
-dir="/home/Mitesh98/project"
+dir="/path"
 
 #Check if dir exist or not.
 
