@@ -5,7 +5,7 @@
 #Define Paths's In variable.
 
 dir="/var/log/secure"
-backupdir="/samba"
+backupdir="/path/to/directory"
 
 #Check if the user is root or not
 
