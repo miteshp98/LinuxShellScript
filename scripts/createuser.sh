@@ -4,11 +4,11 @@
 
 #Define groups name and username and dirname in variable
 
-group="hradmin"
-user="saloni"
+group="name"
+user="name"
 dir="/home/$user"
 shell="/bin/bash"
-comment="junior hr"
+comment="Python dev"
 
 #Check If this Script is using under root/sudo privilege.
 
