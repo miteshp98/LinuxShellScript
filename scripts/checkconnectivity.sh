@@ -14,5 +14,6 @@ logdir="/path/to/server.log"
 if ping -c 3 $servername > /dev/null ; then
 	echo "Server is Running Good and is UP: $(date '+%d-%m-%Y_%H:%M')" >> "$logdir"  2>&1
 else
+	echo "Server is Down and Not Reachable: $(date '+%d-%m-%Y_%H:%M')" >> "$logdir" 2>&1
 	notify-send -u critical "Server Down" "$servername is Not Reachable"
 fi
