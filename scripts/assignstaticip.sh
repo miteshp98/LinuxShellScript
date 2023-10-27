@@ -6,15 +6,15 @@
 
 #Define Your( Ip, DNS, Gateway, Method)  In Variable's.
 
-ip="192.168.68.175"
-dns="8.8.8.8"
-method="manual"
-gateway="192.168.68.1"
-nic="enp0s8"
+ip="192.168.68.175"  	#Change Ip According to You.
+dns="8.8.8.8"		#Your DNS 
+method="manual" 	#Keep Manual If You Are assigning Static.
+gateway="192.168.68.1"  #Your gateway If  you have.
+nic="enp0s8" 		#In Which NIC you want to Assign.
 
 #Use This script as root/sudo Privilege.Might  Not be able to run as user.
 
-if [[ ${UID} -eq 0 ]];then
+if [[ ${UID} -eq 0 ]];then 
 	echo "You are root"
 else
 	exit 1
@@ -23,9 +23,9 @@ fi
 #Check If this Ip is available if not then use different Ip.
 
 if ping  -c 1 -w 1 "$ip" ;then
-	echo "Ip is not available Do not use"
+	echo "Ip is not available Do not use" 		#If it's Reachable than You can not assign.
 else
-	echo "It is availaable You can use it"
+	echo "It is availaable You can use it" 		#If it's Not reachable then You can Assign to it.
 fi
 
 #Assign Ip Address Using nmcli utility.
