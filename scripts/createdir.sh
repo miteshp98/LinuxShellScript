@@ -4,7 +4,7 @@
 
 #Define Name in here.
 
-dir="/home/user/name"
+dir="/home/user/name"    #In Name Give Whatever you directory name you want to create.
 
 #Check if dir exist or not.
 
