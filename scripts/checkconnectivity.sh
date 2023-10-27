@@ -6,7 +6,7 @@
 
 #Define server name.
 
-servername="192.168.68.122"
+servername="www.name.com"
 
 #Checking Connectivity If then.
 
